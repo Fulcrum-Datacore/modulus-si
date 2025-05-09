@@ -49,6 +49,7 @@ jobs:
           hugo \
             --minify \
             --baseURL "https://www.modulus-si.com/"
+            --ignoreCache
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
