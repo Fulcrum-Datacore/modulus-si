@@ -1,0 +1,44 @@
+baseURL = "https://modulus-si.com/"
+languageCode = "en-us"
+title = "Modulus SI"
+themesDir = "themes"
+theme = "ananke"
+
+[params]
+  description = "Advanced commodity insights"
+  featured_image = "/images/sat.png"
+  mainSections = ["services", "research", "about"]
+  
+  # Font customization
+  body_classes = "avenir bg-near-white tl" # Change to "raleway bg-near-white" after adding custom_css
+  text_color = "dark-gray"
+  
+  # Custom CSS - This is the proper way to add custom CSS in Ananke
+  custom_css = ["custom.css"]
+  
+  # Increase content width
+  site_logo_width = "100px" # Adjust as needed
+  body_classes = "avenir bg-near-white" # Will change this after adding Raleway
+   linkedin = "https://www.linkedin.com/in/thomas-meyler-14797065/"  # Your LinkedIn
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 2
+  [[menu.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5

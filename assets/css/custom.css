@@ -1,0 +1,48 @@
+/* Import Raleway font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+/* Apply Raleway to all content */
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Center-align headers with increased width */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-weight: 600;
+}
+
+/* Bold banner titles */
+.featured-image-header h1 {
+  font-weight: 700;
+}
+
+/* Left-justify body text */
+p, ul, ol {
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Additional styles for Ananke theme specifically */
+.center {
+  max-width: 900px;
+}
+
+.lh-copy {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* Make banner text more visible */
+.bg-top .site-title, .bg-top .f2 {
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

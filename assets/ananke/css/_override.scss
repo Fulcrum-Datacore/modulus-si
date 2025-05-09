@@ -1,0 +1,27 @@
+// Import Raleway font
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+// Define font family variable
+$sans-serif: 'Raleway', sans-serif;
+
+// Override width for readability 
+.measure-wide {
+  max-width: 900px;
+}
+
+// Make headers bold
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  text-align: center;
+}
+
+// Keep paragraphs left-aligned
+p, ul, ol {
+  text-align: left;
+}
+
+// Make the banner text pop
+.cover-header .f2 {
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
