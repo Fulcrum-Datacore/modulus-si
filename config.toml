@@ -14,7 +14,7 @@ theme = "ananke"
   text_color = "dark-gray"
   
   # Custom CSS - This is the proper way to add custom CSS in Ananke
-  custom_css = ["custom.css","css/fix-localhost.css"]
+  custom_css = ["custom.css"]
   
   # Increase content width
   site_logo_width = "100px" # Adjust as needed
