@@ -1,0 +1,9 @@
+/* Fix for localhost URLs in background images */
+[style*="localhost:1313"] {
+  background-image: url('/images/sat.png') !important;
+}
+
+/* Target specific headers if needed */
+header.cover.bg-top[style*="localhost"] {
+  background-image: url('/images/sat.png') !important;
+}
