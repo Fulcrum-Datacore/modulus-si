@@ -4,8 +4,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches:
-      - main  # Set this to your default branch name (main or master)
-
+      - main # Set this to your default branch name (main or master)
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -32,25 +31,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
+          submodules: true # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+      
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
-
+      
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
-
+      
       - name: Build
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
-
+            --baseURL "https://www.modulus-si.com/"
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
