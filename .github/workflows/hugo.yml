@@ -43,11 +43,11 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
-      - name: Clean
-        run: |
-          rm -rf public
-          rm -rf resources
-          # rm -rf .hugo_build.lock
+      # - name: Clean
+      #   run: |
+      #     rm -rf public
+      #     rm -rf resources
+      #     # rm -rf .hugo_build.lock
       
       - name: Build
         run: |
