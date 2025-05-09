@@ -1,5 +1,4 @@
 name: Deploy Hugo site to GitHub Pages
-
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -43,18 +42,17 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
-      # - name: Clean
-      #   run: |
-      #     rm -rf public
-      #     rm -rf resources
-      #     # rm -rf .hugo_build.lock
+      
+      - name: Clean
+        run: |
+          rm -rf public
+          rm -rf resources
       
       - name: Build
         run: |
           hugo \
             --minify \
             --baseURL "https://www.modulus-si.com/"
-
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
